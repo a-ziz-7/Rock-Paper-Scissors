@@ -10,6 +10,7 @@ possibilities_rock = ["rock", "r", "1"]
 possibilities_paper = ["paper", "p", "2"]
 possibilities_scissors = ["scissors", "s", "3"]
 
+
 def main():
     score_player, score_comp = 0, 0
     print(Back.LIGHTBLACK_EX, end="")
@@ -67,7 +68,8 @@ def main():
             print(Style.RESET_ALL, end="")
             print("Enter a valid choice!\n")
 
-    if winner_exists: print("You won" if (score_com < score_player) else "Computer won")
+    if winner_exists: 
+        print("You won" if (score_com < score_player) else "Computer won")
 
 
 def tie_case(r, c):
